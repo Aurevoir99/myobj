@@ -1,0 +1,52 @@
+
+
+.ziti{
+	display:block;
+	font-size:40px;
+	margin-left:20px;
+}
+
+
+.diyi{
+	margin-left:20px;
+	margin-top: 20px;
+	display: flex;
+}
+.dleft{
+	width: 300px;
+	height: 400px;
+	display: inline-block;
+}
+
+
+.dright{
+	width: 400px;
+	height: 400px;
+	background-color: palegoldenrod;
+    display: inline-block;
+}
+
+.dright>span{
+	display: block;
+	font-size: 20px;
+	margin-left: 5px;
+	margin-top: 30px;
+}
+
+
+.dr{
+	display: inline-block;
+	width: 80px;
+	height: 60px;
+}
+
+.dr2{
+	margin-left: 20px;
+}
+
+.jianjie{
+    width: 900px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+}

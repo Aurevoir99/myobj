@@ -1,0 +1,48 @@
+<!--pages/coming/coming.wxml-->
+<view class='toptitle'>即将上映的电影</view>
+<swiper autoplay='3000' circular='true'>
+   <swiper-item>
+      <image class='img' src='imgs/1.jpg'></image>
+   </swiper-item>
+   <swiper-item>
+      <image class='img' src='imgs/2.jpg'></image>
+   </swiper-item>
+   <swiper-item>
+      <image class='img' src='imgs/3.jpg'></image>
+   </swiper-item>
+</swiper>
+
+<navigator  wx:for="{{comingDa.itsdata}}" url='com-details/com-details?id={{item.id}}'>
+
+   <view class='title'>{{item.title}}</view> 
+   <view class='flex-container'>
+   <image class='flex-item' src='{{item.images.medium}}'></image>
+ 
+   <view class='flex-item'>
+   <view class='box'>
+<view class='flex-container' >
+ <view class='flex-item'>导演：</view>
+ <text class='flex-item' wx:for="{{item.directors}}">{{item.name}}</text>
+</view></view>
+
+ <view class='box'>
+ <view class='flex-container' >
+<view class='flex-item'>演员：</view>
+<view class='flex-item'>
+<view wx:for="{{item.casts}}"> {{item.name}}</view></view>
+</view></view>
+
+<view class='box'>
+<view class='flex-container' ></view>
+<view class='flex-item' >标签：</view>
+<view class='flex-item' class='genres'>
+<text wx:for="{{item.genres}}">/{{item}}</text></view>
+</view>
+<view class='box'>
+ <text>上映时间：{{item.year}}</text>
+ </view>
+ <view class='box'>
+ <text>简介：......</text> </view>
+ </view>
+ </view>
+</navigator>

@@ -1,0 +1,177 @@
+.pc_imgBox{
+    display: block;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position:  center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 25px;
+}
+.navbar{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.search {
+    width: 216px;
+    height: 40px;
+    border: solid 1px #DC143C;
+    border-radius: 20px;
+    display: flex;
+}
+.search input{
+    width: 144px;
+    height: 40px;
+    margin-left: 21px;
+    border: 0 none;
+    font-size: 22px;
+}
+.search button {
+    width: 85px;
+    height:  40px;
+    margin-left: -29px;
+    background-color: #DC143C;
+    border: none;
+    outline: 0;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 22px;
+}
+.leix{
+    display: flex;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.leix div{
+    width: 254px;
+    height: 80px;
+}
+.sjia,.rebo{
+    margin-left: 15px;
+}
+.two{
+    margin-left: 10px;
+}
+.three {
+    margin-left: 12px;
+}
+.four {
+    margin-left: 20px;
+}
+.five {
+    margin-left: 88px;
+}
+.leix a,.rightnew a {
+    color: black;
+}
+.leix a:hover{
+    color: #DC143C;
+}
+.xian {
+    width: 1151px;
+    height: 10px;
+
+    margin-top: -42px;
+    margin-left: 96px;
+   border-top: solid 1px gainsboro;
+
+}
+.title {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.title a {
+    color: black;
+}
+.title a:hover{
+    color: #DC143C;
+}
+.recent{
+    margin-left: 240px;
+    margin-top: -25px;
+    color: darkgrey;
+}
+.img1{
+    margin-left: 100px;
+}
+.rightnew {
+    margin-left: 622px;
+    margin-top: -291px;
+    display: flex;
+    flex-direction: column;
+}
+.right1{
+    display: flex;
+    flex-direction: row;
+}
+.right1 p{
+    color: darkgrey;
+}
+.rightnew a:hover{
+    color: #DC143C;
+}
+.right-son{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.shoubo {
+    display: flex;
+    margin-left: 100px;
+}
+.shoubo a {
+    color: black;
+}
+.shoubo a:hover{
+    color: #DC143C;
+}
+.shoubo p{
+    color: 	darkgrey;
+}
+.qiang{
+    margin-left: 200px;
+    display: flex;
+    ;
+}
+.qiangson{
+    margin-right: 60px;
+    color: darkgrey;
+    font-size: 15px;
+}
+.biger{
+    font-size: 18px;
+}
+.progress{
+    width: 1147px;
+    height: 8px !important;
+    background-color: gainsboro;
+    margin-left: 138px;
+    margin-top: 5px;
+
+}
+.progress1 {
+    margin-left: 170px;
+    margin-top: -31px;
+}
+.progress1  li{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color:  #DC143C;
+    border-radius: 100%;
+
+}
+.li2 {
+    background-color: gainsboro !important;
+}
+.lilift{
+    margin-left: 142px !important;
+}

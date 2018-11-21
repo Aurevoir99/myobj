@@ -1,0 +1,349 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+
+/*导航条*/
+
+.nav {
+	width: 100%;
+	height: 30px;
+	background-color: rgb(84, 86, 82);
+}
+
+.nav-left a {
+	color: rgb(213, 213, 213);
+	margin: 0 10px 0 10px;
+	line-height: 30px;
+}
+
+.nav-left a:hover {
+	color: white;
+}
+
+.nav-right a {
+	color: rgb(213, 213, 213);
+	margin: 0 10px 0 10px;
+	line-height: 30px;
+}
+
+
+/*搜索框*/
+
+.seach {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(240, 243, 245);
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	line-height: 100px;
+}
+
+.logo {
+	font-size: 40px;
+	color: rgb(29, 137, 203);
+}
+
+.int-tt {
+	width: 300px;
+	height: 40px;
+	margin-left: 50px;
+	margin-top: 30px;
+	border-radius: 10px;
+	outline: none;
+}
+
+.btn {
+	width: 50px;
+	height: 40px;
+	margin-top: 30px;
+	outline: none !important;
+	background-color: rgb(139, 150, 158);
+	color: white;
+	border-radius: 10px;
+}
+
+.text {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(240, 243, 245);
+	border: 1px solid rgb(227, 235, 236);
+	line-height: 50px;
+}
+
+.text a {
+	margin: 0 10px;
+}
+
+
+/*内容*/
+
+.title {
+	font-size: 38px;
+	margin-top: 20px;
+}
+
+.detail {
+	display: flex;
+	flex-direction: row;
+}
+
+.detail img {
+	width: 150px;
+	height: 200px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.detail-text {
+	height: 220px;
+	margin-left: 20px;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.buy {
+	width: 150px;
+	height: 100px;
+	background-color: #F0F3F5;
+	margin-top: 130px;
+}
+
+.buy input {
+	width: 75px;
+	height: 30px;
+	background-color: #268DCD;
+	color: white;
+	margin-top: 32px;
+	margin-left: 22px;
+	outline: none !important;
+}
+
+.green {
+	color: #007722;
+	font-size: 20px;
+	margin-top: 60px;
+}
+
+.yanyua {
+	width: 100px;
+}
+
+.yanyuan img {
+	width: 100px;
+	height: 125px;
+	margin-top: 10px;
+}
+
+.same {
+	display: inline-block;
+	width: 16%;
+	height: 200px;
+}
+
+.same img {
+	width: 110px;
+	height: 150px;
+	margin-top: 20px;
+}
+
+.same a {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.greens {
+	display: block;
+	color: #007722;
+	font-size: 20px;
+	margin-top: 231px;
+}
+
+/*分割线*/
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: rgb(240,243,245);
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+
+
+/*底部*/
+.foot {
+	display: flex;
+}
+/**/
+.foot-left {
+	width: 200px;
+	height: 200px;
+	/*background-color: saddlebrown;*/
+	margin-left: 110px;
+}
+
+.foot-left p {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.left-ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left-ul li {
+	width: 60px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+/**/
+.foot-mid {
+	width: 120px;
+	height: 200px;
+	/*background-color: saddlebrown;*/
+	margin-left: 110px;
+}
+
+.foot-mid p {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.mid-ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+}
+
+.mid-ul li {
+	margin: 0px 0px 10px 5px;
+}
+/**/
+.foot-right {
+	width: 120px;
+	height: 200px;
+	/*background-color: saddlebrown;*/
+	margin-left: 110px;
+}
+
+.foot-right p {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.right-ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+}
+
+.right-ul li {
+	margin: 0px 0px 10px 5px;
+}
+
+/**/
+.foot-next {
+	width: 120px;
+	height: 200px;
+	/*background-color: saddlebrown;*/
+	margin-left: 110px;
+}
+
+.foot-next p {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.next-ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+}
+
+.next-ul li {
+	margin: 0px 0px 10px 5px;
+}
+
+/**/
+.foot-finally {
+	width: 120px;
+	height: 200px;
+	/*background-color: saddlebrown;*/
+	margin-left: 110px;
+}
+
+.foot-finally p {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.finally-ul {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+}
+
+.finally-ul li {
+	margin: 0px 0px 10px 5px;
+}
+
+/*其他信息*/
+.footmeu {
+	display: flex;
+	width: 60%;
+	justify-content:center;
+	margin: 50px auto 5px;
+}
+
+.footmeu a {
+	padding: 0px 10px 0px 10px;
+}
+
+.footmid {
+	display: flex;
+	width: 60%;
+	justify-content:center;
+	margin: auto;
+}
+
+.footlast {
+	display: flex;
+	width: 60%;
+	justify-content:center;
+	margin: 5px auto;
+}
+
+.footlast a {
+	margin-left: 5px;
+}

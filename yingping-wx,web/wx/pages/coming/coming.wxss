@@ -1,0 +1,32 @@
+/* pages/coming/coming.wxss */
+.toptitle{
+   font-size: 70rpx;
+   text-align: center
+}
+.img {
+   width: 100%;
+}
+navigator{
+   border: solid 2rpx blueviolet;
+   margin-top: 20rpx;
+}
+.flex-container{
+   display: flex;
+}
+.title{
+   font-size: 50rpx;
+   text-align: center
+}
+navigator image{
+   width: 426rpx;
+}
+.genres {
+   margin-left: 91rpx;
+   margin-top: -49rpx;
+}
+.box{
+   margin-top: 20rpx;
+}
+
+
+

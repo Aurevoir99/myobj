@@ -1,0 +1,187 @@
+.topjuli{
+	margin-top:10px;
+}
+
+.topjuli>strong{
+	font-size:25px;
+	margin-left:30px;
+}
+.topjuli2{
+	margin-top:20px;
+}
+
+.topjuli2>strong{
+	font-size:25px;
+	margin-left:30px;
+}
+
+.topjuli2>a>span{
+	margin-left:20px;
+	font-size:20px;
+	color:gray;
+}
+.topjuli2>a>span:hover{
+	color:orangered;
+}
+.topjuli2>a>span.xian{
+	border-bottom:2px orangered solid;
+}
+.topjuli2 a{
+	text-decoration:none;
+}
+.test {
+	height: 300px;
+	margin: 0 10px;
+}
+
+.test>img {
+	height: 300px;
+	width:100%;
+}
+
+.test2 {
+/*	background-color: #eee;*/
+}
+
+.yp {
+	height: 140px;
+	margin: 5px 30px;
+	/*background-color: red;*/
+}
+.test2>.yp>img{
+	height:120px;
+	width:100%;
+	display:block;
+}
+
+.yp>span:hover{
+	color:orangered;
+}
+.wenben{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	background-color:rgba(251,250,250,0.5);
+}
+
+.wenben>span{
+	margin-left:15px;
+}
+
+.wenben>span:hover{
+	color:orangered;
+}
+
+.diborder{
+	border-bottom:1px gainsboro solid;
+}
+
+.wenben2{
+	height:50px;
+	line-height:50px;
+	
+}
+.wenben2>span:hover{
+	color:orangered;
+}
+
+.wenben2>span{
+	margin-left:30px;
+}
+
+ .pc_imgBox{
+            display: block;
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+            background-position:  center;
+            background-repeat: no-repeat;
+        }
+        
+        
+        
+        .paihang{
+            margin-left: 120px;
+        	height:280px;
+        	display: flex;
+        	
+        	
+        }
+		.juli{
+			margin-left: 20px;
+		   /* background-color:pink;*/
+		    text-align:center;
+		}
+       .juli>a>img{
+       	width: 150px;
+       	height: 230px;
+       	display: block;
+       }
+		.juli>a>span{
+			font-size: 15px;
+			color: gray;
+			
+		}
+		
+		.juli>a>span:hover{
+			color: orangered;
+		}
+
+
+
+.paihang2{
+            margin-left: 120px;
+        	height:80px;
+        	display: flex;
+        	
+        }
+        
+
+.juli2{
+	    width: 800px;
+		height:80px;  
+		background-color: palegreen;  
+		}
+  .juli2>a>img{
+  	    width: 800px;
+		height:80px; 
+  }
+		
+.juli3{
+	    width: 200px;
+		height:80px; 
+		margin-left: 20px; 
+		background-color: pink;  
+		}
+		
+.juli3>a>img{
+	    width: 200px;
+		height:80px; 
+}
+
+
+/*特色专题样式*/
+
+.juli4{
+	    width: 242px;
+		height:150px;  
+		/*background-color: palegreen; */
+		margin-left:10px; 
+		display: inline-block;
+		}
+  .juli4>a>img{
+  	    width: 242px;
+		height:150px; 
+  }
+
+  .tese{
+  	margin-left:5px;
+  	}
+  .tese>strong{
+	font-size:25px;
+	}
+
+.tesejuli{
+	margin-top: 20px;
+	margin-left: 120px;
+}

@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>主页</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,800' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<link href="css/flexslider.css" rel="stylesheet">
+
+	<!--[if IE 7]>
+
+<link href="css/font-awesome/css/font-awesome-ie7.min.css" rel="stylesheet">
+
+<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<%include header.html%>
+		<section id="home" class="home-slider">
+			<div class="container">
+				<div class="flexslider">
+					<ul class="slides">
+						<li class="slide">
+							<img alt="" src="images/slide01.png" />
+							<div class="flex-caption">
+								<h1>拥抱</h1>
+								<div class="medium">
+									<span>新的一季</span>
+								</div>
+								<div class="small">
+									<span>长短不一</span>
+								</div>
+								<div class="small yellow">
+									<span>个人漂亮的手提款</span>
+								</div>
+								<div>
+									<span><a class="cusmo-btn" href="#">了解详情</a></span>
+
+								</div>
+
+							</div>
+						</li>
+						<li class="slide">
+							<img alt="" src="images/slide01.png" />
+							<div class="flex-caption">
+								<h1>流行时尚</h1>
+								<div class="medium">
+									<span>你可以使用这个主题</span>
+								</div>
+								<div class="small">
+									<span>为你的小生意</span>
+								</div>
+								<div class="small yellow">
+									<span>漂亮活泼可爱的</span>
+								</div>
+								<div>
+									<span><a class="cusmo-btn" href="#">学习更多</a></span>
+
+								</div>
+
+							</div>
+						</li>
+
+
+
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-home-products">
+			<div class="container">
+				<div class="controls-holder nav-tabs">
+					<ul class="inline">
+						<li class="active"><a data-toggle="tab" href="#hot-products">畅销款</a></li>
+						<li><a data-toggle="tab" href="#new-products">新产品</a></li>
+						<li><a data-toggle="tab" href="#best-sellers">优秀买家</a></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div id="hot-products" class="products-holder active tab-pane " >
+						<div class="row-fluid" onclick="shopping()">
+							<%data.forEach(function(item,index){%>
+							
+							<div class="span3" style="margin-left:0;">
+								<div class="product-item">
+
+									<a href="#">
+										<img alt="" src="<%=item.imgs%>" />
+										<h1>
+											<%=item.name%>
+										</h1>
+									</a>
+									<div class="tag-line">
+										<span></span>
+										<!-- <span>toilet water spray</span> -->
+									</div>
+									<div class="price">
+										$
+										<%=item.prices%>
+									</div>
+									<a class="cusmo-btn add-button" href="javascript:void(0)">加入购物车</a>
+								</div>
+							</div>
+					
+							<%}) %>
+						</div>
+						<div class="load-more-holder">
+							<a href="#hot-products" class="load-more">
+								加载更多新产品
+							</a>
+						</div>
+
+					</div>
+
+					
+
+					<div id="new-products" class="products-holder  tab-pane ">
+						<div class="row-fluid">
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p9.jpg" />
+										<h1>蓝色</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻石</span>
+										<span>喷雾打扮水</span>
+									</div>
+									<div class="price">
+										$170.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p10.jpg" />
+										<h1>酷爱</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$92.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p2.jpg" />
+										<h1>黑莓</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$220.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p4.jpg" />
+										<h1>范思哲</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$20.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p6.jpg" />
+										<h1>冰冻效果</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$270.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p8.jpg" />
+										<h1>高贵香精</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$122.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p1.jpg" />
+										<h1>新雪茄色</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$120.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">加入购物车</a>
+								</div>
+							</div>
+							<div class="span3">
+								<div class="product-item">
+									<a href="#">
+										<img alt="" src="images/p3.jpg" />
+										<h1>利维斯牌牛仔裤</h1>
+									</a>
+									<div class="tag-line">
+										<span>黄钻</span>
+										<span>喷雾水</span>
+									</div>
+									<div class="price">
+										$20.00
+									</div>
+									<a class="cusmo-btn add-button" href="#">喷雾水</a>
+								</div>
+							</div>
+						</div>
+						<div class="load-more-holder">
+							<a href="#new-products" class="load-more">
+								加载更多畅销款
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="best-sellers" class="products-holder  tab-pane ">
+					<div class="row-fluid">
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p5.jpg" />
+									<h1>范思哲</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span></span>
+								</div>喷雾水
+								<div class="price">
+									$270.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p7.jpg" />
+									<h1>雅诗兰黛</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$122.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p9.jpg" />
+									<h1>博柏利</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$120.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p10.jpg" />
+									<h1>范思哲</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$20.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p1.jpg" />
+									<h1>范思哲</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$270.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p2.jpg" />
+									<h1>雅诗兰黛</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$122.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p3.jpg" />
+									<h1> 柏帛丽雨衣</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$120.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+						<div class="span3">
+							<div class="product-item">
+								<a href="#">
+									<img alt="" src="images/p4.jpg" />
+									<h1>范西哲</h1>
+								</a>
+								<div class="tag-line">
+									<span>黄钻</span>
+									<span>喷雾水</span>
+								</div>
+								<div class="price">
+									$20.00
+								</div>
+								<a class="cusmo-btn add-button" href="#">加入购物车</a>
+							</div>
+						</div>
+					</div>
+					<div class="load-more-holder">
+						<a href="#best-sellers" class="load-more">
+							获得更多热门产品
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<%include footer.html%>
+
+	</div>
+
+	<style>
+			#shopping-box{
+				display: none;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.3);
+				position: absolute;
+				left: 0;
+				top:0;
+			}
+			#shopping-infor{
+				width: 200px;
+				height: 300px;
+				background-color:white;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			#shopping-infor p{
+				margin: auto;
+				width: 60%;
+				height: 40px;
+			}
+			#shopping-number{
+				outline: none;
+				width: 50px;
+			}
+			.btns{
+				height: 60px;
+				width: 100%;
+				margin: auto;
+				text-align: center;
+			}
+		</style>
+		<div id="shopping-box">
+			<div id="shopping-infor">
+				<p class="shopping-name">商品名：<span id="itemname"></span></p>
+				<p class="shopping-price">单价：$<span id="itemprice"></span></p>
+				<p class="shopping-numbers">数量：<input type="text" value="1" id="shopping-number"></p>
+				<div class="btns">
+					<button id="submits">提交</button>
+					<button id="btn2" onclick="cancel()">取消</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 这是购物车添加 -->
+		<script>
+			var shoppingBox=document.getElementById("shopping-box");
+				function shopping(event) {
+					var e = event || window.event;
+					var target = e.target || e.srcElement;
+					var count = target.parentNode;
+					var name = count.firstElementChild.lastElementChild.innerText;
+					
+					var price = target.previousElementSibling.innerText ;
+					var priceNum = price.replace("$","")
+					
+					var top = document.body.scrollTop||document.documentElement.scrollTop;
+					var shoppingName=document.getElementsByClassName("shopping-name")[0];
+					shoppingName.lastElementChild.innerHTML=name;
+					var shoppingPrice=document.getElementsByClassName("shopping-price")[0];
+					shoppingPrice.lastElementChild.innerHTML=priceNum
+					shoppingBox.style.display="block";
+					shoppingBox.style.top=top+"px";
+					document.body.style.height = '100vh';
+					document.body.style['overflow-y'] = 'hidden';
+					var submits=document.getElementById("submits");
+					console.log(submits)
+					submits.addEventListener("click",function(){
+						var name = $("#itemname").get(0).innerText;
+						var username = $("#username").get(0).innerText;
+						var price = $("#itemprice").get(0).innerText;
+						var num = $("#shopping-number").val();
+						$.ajax({
+						url: "addshopping",
+						type: "get",
+						data: {
+							name,
+							username,
+							price,
+							num
+						},
+						traditional: true,
+						success: function (data) {
+							if(data=="1"){
+								alert("请登录");
+								window.location.href="http://localhost:9999/checkout-1";
+							}else if(data=="2"){
+								alert("提交成功");
+								cancel();
+							}
+						}
+					})
+					})
+				}
+
+				function cancel(){
+					document.body.style.height = 'unset';
+					document.body.style['overflow-y'] = 'auto';
+					shoppingBox.style.display="none";
+				}												
+			</script>
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="css/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/css_browser_selector.js"></script>
+	<script type="text/javascript" src="js/twitter-bootstrap-hover-dropdown.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing-1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

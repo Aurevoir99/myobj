@@ -1,0 +1,36 @@
+/* pages/wode/login/login.wxss */
+page{
+  background-color: #eee;
+}
+.box{
+  width: 100%;
+  margin-top: 100rpx;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box input{
+  width: 500rpx;
+  height: 100rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 20rpx;
+  background-color: white;
+  padding: 0 20rpx;
+  margin: auto;
+}
+.login{
+  width: 300rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: rgb(34, 192, 34);
+  text-align: center;
+  color: white;
+  line-height: 100rpx;
+  margin: auto;
+}
+.resigned{
+  color: blue;
+  text-decoration: underline;
+  margin: auto;
+}

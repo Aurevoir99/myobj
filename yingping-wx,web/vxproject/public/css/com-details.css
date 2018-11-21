@@ -1,0 +1,88 @@
+.allbox{
+    margin-left: 100px;
+}
+.flex-container{
+    display: flex;
+}
+.coming{
+    font: oblique bold 32px  diagonal-fractions;
+    color: #269abc;
+    cursor: pointer;
+}
+
+.search{
+    width: 400px;
+    height: 30px;
+    margin-left: 100px;
+    outline: none;
+    color: gainsboro;
+
+}
+.sea-btn{
+    width: 70px;
+    height: 36px;
+    border: 0 none;
+    background-color: gray;
+    cursor: pointer;
+}
+.topsearch{
+    margin-top: 7px;
+}
+.where{
+    width: 280px;
+    height: 253px;
+    background-color: #F4F4EC;
+}
+.image{
+    width: 140px;
+    height: 230px;
+}
+.center{
+    margin-left: 60px;
+}
+.center-son{
+    flex-direction: column;
+}
+.center-three{
+    margin-left: 30px;
+    border-left: solid 1px gainsboro;
+    padding-left: 20px;
+    height: 250px;
+}
+.fen{
+    font-size: 30px;
+}
+.pfimg{
+    margin-top: 1px;
+}
+.pfnum{
+    font-size: 12px;
+    margin-left: 9px;
+    margin-top: -4px;
+}
+.movie-pf{
+    flex-direction: column;
+    border-bottom: solid 1px gainsboro;
+}
+.center-three-botom{
+    font-size: 12px;
+}
+
+.center-last-one{
+    padding-left: 10px;
+}
+.where-see{
+margin-left: 22px;
+    border-bottom: dashed 1px gainsboro;
+}
+.where-see a{
+    text-decoration: none;
+}
+.where-see p{
+    margin-left: 120px;
+    margin-top: -18px;
+}
+.summary{
+    width: 600px;
+    letter-spacing: 2px;
+}

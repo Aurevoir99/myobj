@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/coming.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+    <script src="jquery-3.3.1/jquery-3.3.1实际应用.js" type="text/javascript">
+    </script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+</head>
+
+<body>
+    <!--头部导航栏-->
+    <div class="container-fluid  navbar " style="position:relative;">
+        <div class="col-lg-8 ">
+            <ul class="nav container" style="background-color: white">
+                <a class="col-md-2" href="http://localhost:9999/home" style="font:bold 24px black">首页</a>
+                <a class="col-md-2" href="#" style="font:bold 24px black">我的视频</a>
+                <a class="col-md-2" href="#" style="font:bold 24px black">电影</a>
+                <a class="col-md-2" href="#" style="font:bold 24px black">频道</a>
+            </ul>
+        </div>
+        <div class="col-lg-3">
+            <div class="search flex-containe">
+                <input class="flex-item" type="text" placeholder="昨日青天" />
+                <button class="flex-item">全网搜</button>
+            </div>
+        </div>
+    </div>
+
+    <!--轮播图-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top:50px;">
+
+
+
+        <!-- 指示器 -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播图片及说明文字 -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#" class="pc_imgBox" style="background-image: url('images/imgs/0.jpg')"></a>
+            </div>
+            <div class="item">
+                <a href="#" class="pc_imgBox" style="background-image: url('images/imgs/1.jpg')"></a>
+            </div>
+            <div class="item">
+                <a href="#" class="pc_imgBox" style="background-image: url('images/imgs/2.jpg')"></a>
+            </div>
+            <div class="item">
+                <a href="#" class="pc_imgBox" style="background-image: url('images/imgs/3.jpg')"></a>
+            </div>
+        </div>
+        <!-- 控制按钮：左右切换 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+
+
+    <div class="flex-container leix">
+        <div class="flex-item   leixing">
+            <a href="">新热栏目</a>
+            <a class="sjia" href="">最新上架</a>
+            <a class="rebo" href="">最近热播</a>
+        </div>
+        <div class="flex-item leixing">
+            <a href=""> 内地</a>
+            <a class="two" href="">香港</a>
+            <a class="two" href="">美国</a>
+            <a class="two" href="">欧洲</a>
+            <a class="two" href="">韩国</a>
+        </div>
+        <div class="flex-item leixing">
+            <a href="">喜剧</a>
+            <a class="three" href="">动作</a>
+            <a class="three" href="">爱情</a>
+            <a class="three" href="">惊悚</a>
+            <a class="three" href="">冒险</a>
+        </div>
+        <div class="flex-item leixing">
+            <a href="">成龙</a>
+            <a class="four" href="">吴京</a>
+            <a class="four" href="">刘德华</a>
+            <a class="four" href="">黄渤</a>
+        </div>
+        <div class="flex-item leixing">
+            <a class="five" href="">电影片刻</a>
+        </div>
+    </div>
+    <div class="xian"></div>
+
+
+    <div class="title"><a href="">院线新片预告</a></div>
+    <img class="img1" src="images/imgs/4.png" alt="" />
+
+    <!--院线新片预告右第一行-->
+    <div class="rightnew  flex-container">
+        <div class="flex-item flex-container right1">
+            <div class="flex-item flex-container right-son">
+                <img class="flex-item" src="images/imgs/5.png" alt="" />
+                <a class="flex-item" href="">我的间谍前男友</a>
+                <p class="flex-item">史上最话痨间谍攻略欧洲</p>
+            </div>
+            <div class="flex-item flex-container right-son">
+                <img class="flex-item" src="images/imgs/6.png" alt="" />
+                <a class="flex-item" href="">战斗名族养成记</a>
+                <p class="flex-item">豆瓣9.1分神剧改编电影</p>
+            </div>
+            <div class="flex-item flex-container right-son">
+                <img src="images/imgs/7.png" alt="" />
+                <a class="flex-item" href="">毒液：致命守护者</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+            <div class="flex-item flex-container right-son">
+                <img class="flex-item" src="images/imgs/8.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+        </div>
+
+
+        <!--院线新片预告右第二行-->
+        <div class="flex-item flex-container right1">
+            <div class="flex-item flex-container right-son">
+                <img class="flex-item" src="images/imgs/5.png" alt="" />
+                <a class="flex-item" href="">我的间谍前男友</a>
+                <p class="flex-item">史上最话痨间谍攻略欧洲</p>
+            </div>
+            <div class="flex-item flex-container right-son">
+                <img class="flex-item" src="images/imgs/6.png" alt="" />
+                <a class="flex-item" href="">战斗名族养成记</a>
+                <p class="flex-item">豆瓣9.1分神剧改编电影</p>
+            </div>
+            <div class="flex-item flex-container right-son">
+                <img src="images/imgs/7.png" alt="" />
+                <a class="flex-item" href="">毒液：致命守护者</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+            <div class="flex-item flex-container right-son">
+                <img class="flex-item" src="images/imgs/8.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="title"><a href="">首播影院</a></div>
+    <!--首播影院第一行-->
+    <div class="flex-container shoubo">
+        <%datas2.forEach(function(item,index){%>
+        <%if(index<=5){%>
+            <a href="<%=item.alt%>">
+        <div class="flex-item" style="margin-left:30px;">
+            <img class="flex-item" src="<%=item.images.small%>" alt="" style="width:180px;height:180px;"/>
+            <p> <a class="flex-item" href="">
+                <%=item.original_title%></a>
+            </p>
+            <p class="flex-item">
+                <%=item.original_title%>
+            </p>
+        </div>
+        </a>
+        <%}%>
+
+        <%})%>
+    </div>
+    <!--首播影院第二行-->
+    
+
+
+    <div class="title ">强势接档</div>
+    <p class="recent">近期上架的精彩内容</p>
+    <div class="flex-container qiang">
+        <div class="flex-item flex-container biger ">今天
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+        <div class="flex-item biger">下周二
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+        <div class="flex-item biger">下周五
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+        <div class="flex-item biger">11月9日
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+        <div class="flex-item biger">敬请期待
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+        <div class="flex-item biger">敬请期待
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+        <div class="flex-item biger">敬请期待
+            <div class="flex-item qiangson">10月26日首播</div>
+        </div>
+    </div>
+    <div class="progress">
+    </div>
+    <div>
+        <ul class="progress1">
+            <li></li>
+            <li class="lilift"></li>
+            <li class="lilift"></li>
+            <li class="li2 lilift"></li>
+            <li class="li2 lilift"></li>
+            <li class="li2 lilift"></li>
+            <li class="li2 lilift"></li>
+        </ul>
+
+
+        <!--强势接档-->
+        <div class="flex-container shoubo">
+                <%datas2.forEach(function(item,index){%>
+                    <%if(index>13){%>
+                        <a href="<%=item.alt%>">
+                            <div class="flex-item" style="margin-left:30px;">
+                                    <img class="flex-item" src="<%=item.images.small%>" alt="" style="width:180px;height:180px;"/>
+                                    <p> <a class="flex-item" href="">
+                                        <%=item.original_title%></a>
+                                    </p>
+                                    <p class="flex-item">
+                                        <%=item.original_title%>
+                                    </p>
+                                </div>
+                        
+                                </a>
+                    <%}%>
+            
+                    <%})%>
+        </div>
+
+
+        <div class="title"><a href="">更多精彩内容 </a> </div>
+        <!--更多精彩内容-->
+        <div class="flex-container shoubo" style="flex-wrap: wrap;width: 90%;">
+                <%datas2.forEach(function(item,index){%>
+                    <a href="<%=item.alt%>">
+                            <div class="flex-item" style="margin-left:30px;">
+                                    <img class="flex-item" src="<%=item.images.small%>" alt="" style="width:180px;height:180px;"/>
+                                    <p> <a class="flex-item" href="">
+                                        <%=item.original_title%></a>
+                                    </p>
+                                    <p class="flex-item">
+                                        <%=item.original_title%>
+                                    </p>
+                                </div>
+                        
+         
+                            </a>
+                    <%})%>
+        </div>
+
+        <div class="title">影评栏目</div>
+        <!--影评栏目-->
+        <div class="flex-container shoubo">
+            <div class="flex-item">
+                <img class="flex-item" src="images/imgs/13.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+            <div class="flex-item">
+                <img class="flex-item" src="images/imgs/13.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+            <div class="flex-item">
+                <img class="flex-item" src="images/imgs/13.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+            <div class="flex-item">
+                <img class="flex-item" src="images/imgs/13.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+            <div class="flex-item">
+                <img class="flex-item" src="images/imgs/13.png" alt="" />
+                <a class="flex-item" href="">神奇动物</a>
+                <p class="flex-item">漫威另类英雄强势来袭</p>
+            </div>
+        </div>
+
+        <div class="foot">
+
+            <!--热门频道-->
+            <div class="foot-left">
+                <p><strong>热门频道</strong></p>
+                <ul class="left-ul">
+                    <li>
+                        <a href="#">电视剧</a>
+                    </li>
+                    <li>
+                        <a href="#">综艺</a>
+                    </li>
+                    <li>
+                        <a href="#">电影</a>
+                    </li>
+                    <li>
+                        <a href="#">动漫</a>
+                    </li>
+                    <li>
+                        <a href="#">娱乐</a>
+                    </li>
+                    <li>
+                        <a href="#">MV</a>
+                    </li>
+                    <li>
+                        <a href="#">动漫</a>
+                    </li>
+                    <li>
+                        <a href="#">游戏</a>
+                    </li>
+                    <li>
+                        <a href="#">VIP影院</a>
+                    </li>
+                    <li>
+                        <a href="#">英美剧</a>
+                    </li>
+                    <li>
+                        <a href="#">纪录片</a>
+                    </li>
+                    <li>
+                        <a href="#">新闻</a>
+                    </li>
+                    <li>
+                        <a href="#">体育</a>
+                    </li>
+                    <li>
+                        <a href="#">生活</a>
+                    </li>
+                </ul>
+            </div>
+            <!--特色推荐-->
+            <div class="foot-mid">
+                <p><strong>特色推荐</strong></p>
+                <ul class="mid-ul">
+                    <li>
+                        <a href="">原创自媒体</a>
+                    </li>
+                    <li>
+                        <a href="">微电影</a>
+                    </li>
+                    <li>
+                        <a href="">拍客</a>
+                    </li>
+                    <li>
+                        <a href="">腾讯Mac软件</a>
+                    </li>
+                </ul>
+            </div>
+            <!--服务-->
+            <div class="foot-right">
+                <p><strong>服务</strong></p>
+                <ul class="right-ul">
+                    <li>
+                        <a href="">客服</a>
+                    </li>
+                    <li>
+                        <a href="">反馈</a>
+                    </li>
+                    <li>
+                        <a href="">侵权投诉</a>
+                    </li>
+                    <li>
+                        <a href="">免广告合作</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--关于我们-->
+            <div class="foot-next">
+                <p><strong>关于我们</strong></p>
+                <ul class="next-ul">
+                    <li>
+                        <a href="">公司介绍</a>
+                    </li>
+                    <li>
+                        <a href="">新闻动态</a>
+                    </li>
+                    <li>
+                        <a href="">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="">用户协议</a>
+                    </li>
+                    <li>
+                        <a href="">隐私政策</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--招聘英才-->
+            <div class="foot-finally">
+                <p><strong>招聘英才</strong></p>
+                <ul class="finally-ul">
+                    <li>
+                        <a href="">社会招聘</a>
+                    </li>
+                    <li>
+                        <a href="">校园招聘</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>

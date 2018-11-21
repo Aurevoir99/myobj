@@ -1,0 +1,46 @@
+/* pages/wode/resigned/resigned.wxss */
+page{
+  background-color: #eee;
+}
+.top{
+  width: 100%;
+  height: 1000rpx;
+  background-color: white;
+  margin: 20rpx 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.top image{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.top form{
+  height: 600rpx;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.resigned{
+  width: 300rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: rgb(34, 192, 34);
+  text-align: center;
+  color: white;
+  line-height: 100rpx;
+  margin-top: 20rpx;
+}
+.input{
+  width: 500rpx;
+  height: 100rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 20rpx;
+  background-color: white;
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+}

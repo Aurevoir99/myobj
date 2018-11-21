@@ -1,0 +1,21 @@
+<!--pages/wode/wode.wxml-->
+<!-- <text>pages/wode/wode.wxml</text> -->
+<view class='top'>
+  <image src='../../images/weidenglu.jpg'></image>
+  <navigator url='login/login'>登录</navigator>
+</view>
+
+<view class='footer'>
+  <view>
+    <text>观看历史</text>
+    <icon class="iconfont icon-youjiantou"></icon>
+  </view>
+  <view>
+    <text>我的看单</text>
+    <icon class="iconfont icon-youjiantou"></icon>
+  </view>
+  <view>
+    <text>设置</text>
+    <icon class="iconfont icon-youjiantou"></icon>
+  </view>
+</view>

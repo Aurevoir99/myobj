@@ -1,0 +1,37 @@
+<!--pages/hot/hot_detail/hot_detail.wxml-->
+<view class='all'>
+  <swiper class='swiper' indicator-dots='true' indicator-color='rgba(255,255,255,0.5)' indicator-active-color='white' autoplay='true' interval='1500' circular='true' previous-margin='50rpx' next-margin='50rpx'>
+    <swiper-item>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541300512&di=75ebc21290ea8358033f9c5dafef3e1a&imgtype=jpg&er=1&src=http%3A%2F%2Fpic35.photophoto.cn%2F20150507%2F0017029555837290_b.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540705809504&di=85d579284c3a8e21a452b3c0a508ad3f&imgtype=0&src=http%3A%2F%2Fupload-images.jianshu.io%2Fupload_images%2F13669183-5abb281fff744a05.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540705853750&di=029eb50356d113080c130d4ad4c84d9b&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0146285a0d22fea801204a0e59beac.jpg%403000w_1l_2o_100sh.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540705907060&di=29c16ba327e60cff964114c6c5be6ac9&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fnews%2Fcrawl%2F116%2Fw550h366%2F20180704%2FQZBL-hevauxk5475243.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541300720&di=2464f09e139b91fd302a8c775cd98a38&imgtype=jpg&er=1&src=http%3A%2F%2Fimgtu.5011.net%2Fuploads%2Fcontent%2F20160729%2F7038301469783018.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+    <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2184046820,3294721518&fm=26&gp=0.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <image class='img' src='{{mydetail.details.images.large}}'></image>
+
+  <view class='name'>
+    <view class='film-name'>{{mydetail.details.title}}/{{mydetail.details.original_title}}
+      <view class='countries'>{{mydetail.details.countries[0]}} {{mydetail.details.countries[1]}}
+      </view>
+    </view>
+    <view>导演：{{mydetail.details.directors[0].name}}</view>
+    <view>主演：{{mydetail.details.casts[0].name}},{{mydetail.details.casts[1].name}},{{mydetail.details.casts[2].name}},{{mydetail.details.casts[3].name}}</view>
+    <view>类型：{{mydetail.details.genres[0]}} {{mydetail.details.genres[1]}} {{mydetail.details.genres[2]}}</view>
+    <view>豆瓣评分：{{mydetail.details.rating.average}}</view>
+    <view>详情：{{mydetail.details.summary}}</view>
+    <!-- <view bindtap='buy'>购票观看</view> -->
+  </view>
+</view>

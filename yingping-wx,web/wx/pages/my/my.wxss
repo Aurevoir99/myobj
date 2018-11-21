@@ -1,0 +1,23 @@
+/* pages/my/my.wxss */
+.yanse{
+  color: green;
+}
+
+.topzhi{
+  margin-top: 35rpx;
+  
+}
+
+
+.qiehuan{
+  width: 100%;
+  height: 300rpx;
+
+}
+
+.gundong{
+width: 400rpx;
+/* height: 300rpx; */
+display: inline-block;
+margin: 10rpx auto; 
+}

@@ -1,0 +1,51 @@
+<!--pages/home/home.wxml-->
+<view>
+  <text class='ziti'>豆瓣电影排行榜</text>
+</view>
+
+
+<swiper class='sw' autoplay='true' interval='2000' indicator-color='yellow' indicator-active-color='pink' indicator-dots='true'>
+  <swiper-item>
+    <image class='tupian' src='../../ico/1.jpeg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class='tupian' src='../../ico/2.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class='tupian' src='../../ico/3.jpg'></image>
+  </swiper-item>
+</swiper>
+
+<navigator class='kuai' wx:for="{{mine.statues}}"  url='../my/my?id={{item.id}}'  >
+  <view class='left'>
+    <image src='{{item.images.large}}'></image>
+  </view>
+
+  <view class='right'>
+    <view>
+      <text>{{item.title}}</text>
+    </view>
+    <view class='daoyan'>
+      <view class='ziti2' wx:for="{{item.directors}}" wx:for-item="director">导演：{{director.name}}</view>
+    </view>
+
+    <view class='texts'>
+     
+      <view class='ziti2 zhuyan '>主演：</view>
+
+      <view >
+        <view class='ziti2 zhuyan2' wx:for="{{item.casts}}" wx:for-item="casts">{{casts.name}} </view>
+      </view>
+    </view>
+
+
+    <view class='leixing'>
+      <view class='ziti2'>类型：{{item.genres}}</view>
+    </view>
+
+
+
+  </view>
+
+
+</navigator> 

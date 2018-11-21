@@ -1,0 +1,7 @@
+<!--pages/wode/login/login.wxml-->
+<view class='box'>
+  <input type='text' placeholder='请输入账号' maxlength="12"></input>
+  <input password='true' placeholder='请输入密码' maxlength="16"></input>
+  <view class='login'>登录</view> 
+  <navigator url='../resigned/resigned' class='resigned'>注册</navigator>
+</view>

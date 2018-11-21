@@ -1,0 +1,46 @@
+/* pages/hot/hot_detail/hot_detail.wxss */
+.all {
+  width: 100%;
+  height: 100%;
+  background-color:#F5FFFA
+}
+
+.swiper {
+  width: 100%;
+  height: 400rpx;
+}
+
+.swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 400rpx;
+  height: 500rpx;
+  margin-left: 150rpx;
+  margin-top: 30rpx;
+}
+
+.name {
+  width: 700rpx;
+}
+
+.name view {
+  margin-left: 40rpx;
+  line-height: 100rpx;
+}
+
+.film-name {
+  font-weight: bold;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.countries {
+  font-size: 28rpx;
+  position: absolute;
+  top: 0;
+  left: 357rpx;
+}

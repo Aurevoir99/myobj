@@ -1,0 +1,19 @@
+<!--pages/hot/hot.wxml-->
+<!-- 头部 -->
+<text class='title'>热门电影</text>
+<!-- hot_detail/hot_detail?myid={{item.id}} -->
+<!-- 正文 -->
+<navigator wx:for="{{mydatas.mydata}}" url='hot_detail/hot_detail?id={{item.id}}'>
+  <view class='film'>
+    <image src='{{item.images.small}}' class='images'></image>
+    <view class='flex'> 
+      <view class='titles'>{{item.title}}</view>
+      <view class='name'>
+        <view wx:for="{{item.casts}}" wx:for-item="cast" class='cast'>
+          {{cast.name}}
+        </view>
+      </view>
+      <view class='score'>豆瓣评分：{{item.rating.average}}</view>
+    </view>
+  </view>
+</navigator>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>香水-后台系统</title>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .body{
+            background-color: rgba(255,228,225,0.5);
+        }
+
+
+        .top{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(105,105,105);
+            position: fixed;
+            top: 0;
+        }
+
+        .top_logo{
+            width:274px;
+            height:49px;
+            float: left;
+            margin: 10px 0px 0px 5px;
+
+
+        }
+        .top_logo .ziti{
+            display: inline-block;
+            font-size: 20px;
+            color: darkgray;
+            width:274px;
+            height: 50px;
+            line-height: 50px;
+            text-align:center;
+
+        }
+
+
+        .top_links {
+            width: 480px;
+            height: 65px;
+            float: right;
+            line-height: 65px;
+            color: #ADADAD;
+            line-height: 65px;
+            position: relative;
+        }
+
+
+        .top_op {
+            width: 400px;
+        }
+
+        .top_op ul {
+            list-style-type: none;
+        }
+
+        .top_op ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .top_op ul li img {
+            vertical-align: text-top;
+        }
+
+        .top_close {
+            width: 80px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            border-left: 1px solid #171717;
+            vertical-align: text-top;
+        }
+
+
+
+        .concent_left {
+            background-color: rgba(255,187,0,0.8);
+            width: 10%;
+            height: 100%;
+            position: fixed;
+            top: 80px;
+            left: 15%;
+        }
+        .concent_left>a>img {
+            height: 70px;
+            width: 60%;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        .concent_right {
+            width: 50%;
+            height: 400px;
+            background-color: rgba(255,228,225,0.5);
+            margin: 80px auto;
+        }
+
+
+        .right-one{
+            width:50%;
+            height: 40px;
+            margin-left:330px;
+            background-color: rgba(255,228,225,0.5);
+
+        }
+        .search{
+             border-radius: 10%;
+             height: 30px;
+             margin: 5px 0px 0px 30px;
+         }
+
+        .button{
+            width: 40px;
+        }
+
+
+        .right-two{
+            width: 98%;
+            height: 40px;
+            margin-left: 5px;
+            border-bottom: 1px solid black;
+            /*background-color: rgba(255,228,225,0.5);*/
+        }
+
+        .right-three{
+            width: 98%;
+            margin-top: 5px;
+        }
+
+        /* 展示模块 */
+        .ul{
+            display: flex;
+            flex-wrap: nowrap;
+            list-style: none;
+        }
+        .ul>li{
+            margin: auto;
+            list-style: none;
+        }
+        .ul-id,.ul-number{
+            width: 10%;
+            text-align: center
+        }
+        .ul-user{
+            width: 20%;
+            text-align: left;
+        }
+        .ul-items{
+            text-align: left;
+            width: 30%;
+        }
+    </style>
+
+    <script type="text/javascript">
+                /**退出系统**/
+                        function logout(){
+                    if(confirm("您确定要退出本系统吗？")){
+                        window.location.href = "login";
+                    }
+                }
+    </script>
+</head>
+<body class="body">
+<%include houtaihead.html%>
+
+<div class="concent_left">
+    <a href="http://localhost:9999/user" title="用户管理"><img src="images/logo/1.png" ></a>
+    <a href="http://localhost:9999/items" title="商品详情"><img src="images/logo/2.png" ></a>
+    <a href="http://localhost:9999/order" title="订单明细"><img src="images/logo/3.png" ></a>
+</div>
+
+
+<div class="concent_right">
+    <div class="right-one">
+        <input type="text" class="search" name="" id="search" value="" />
+        <input type="button" class="button" name="chaxun" id="chaxun" value="查询" />
+    </div>
+    
+    
+    <script>
+         var chaxun=document.getElementById("chaxun");
+         chaxun.addEventListener("click",function(){
+            var sousuo=document.getElementById("search").value;
+             console.log(sousuo);
+            if(sousuo==""){
+                alert("查询条件不能为空!");
+            }else{
+                $.ajax({
+                    url:'orders',
+                    type:'post',
+                    data:{
+                        sousuo:sousuo
+                    },
+                    traditional:true,
+                    success:function(data){
+                        if(data=="1"){
+                            window.location.href = "http://localhost:9999/order?name="+sousuo;
+                        }else{
+                            alert("该用户没有订单");
+                        }
+
+                    }
+                })
+            }
+        })
+    </script>
+
+
+    <div class="right-two">
+        <ul class="ul">
+        <li class="ul-id">订单ID号</li>
+        <li class="ul-user">购买人</li>
+        <li class="ul-items">商品名字</li>
+        <li class="ul-number">商品数量</li>
+    </ul>
+    </div>
+
+    <div class="right-three">
+        <%if(result.length!=0){%>
+        <%result.forEach(function(obj){%>
+        <ul class="ul">
+            <li class="ul-id"><%=obj.id%></li>
+            <li class="ul-user"><%=obj.username%></li>
+            <li class="ul-items"><%=obj.itmes%></li>
+            <li class="ul-number"><%=obj.numbers%></li>
+        </ul>
+
+        <%})%>
+        <%}%>
+    </div>
+
+
+</div>
+</body>
+</html>
